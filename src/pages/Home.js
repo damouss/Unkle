@@ -10,8 +10,8 @@ const Home = () => {
                     <div className='row'>
                         <div className='col-md-7'>
                             <h1>Tooltips project home</h1>
-                            <button class="btn btn-primary dark" type="submit">Button</button>
-                            <button class="btn btn-primary pink" type="submit">Button</button>
+                            <button class="btn btn-primary dark" type="submit">Hover me</button>
+                            <button class="btn btn-primary pink" type="submit">Click me</button>
                         </div>
                         <div className='col-md-5'>
                             <img src='https://assets.website-files.com/61017ce461144e8b7ef7d545/6123a030ea94c8391e1ce4e0_svgexport-6.svg' className='img-fluid'/>

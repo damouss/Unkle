@@ -29,7 +29,8 @@ h1{
     border-radius: 64px;
     padding: 0.9em 1.6em;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 1.125rem;
 }
 
 .btn-primary{
@@ -41,5 +42,13 @@ h1{
         background-color: $pink;
         color: $primary-color;
         border-color: $pink;
+    }
+    &:focus{
+        box-shadow: none;
+    }
+    &:active{
+        &:focus{
+            box-shadow: none;
+        }
     }
 }
