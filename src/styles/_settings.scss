@@ -1,13 +1,45 @@
+@import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+$primary-color:#08224c;
+$pink:#ffa5c5;
+$light-blue:#e2f3ff;
+
 body {
     margin: 0;
     font-family: Work Sans,sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: $primary-color;
   }
-  
-  h1,h2,h3,h4{
+/*TITLES*/
+h1,h2,h3,h4{
     font-family: 'Gentium Book Basic', serif;
-    font-weight: 600;
-    color: #08224c;
+    font-weight: 700;
+    color: $primary-color;
+}
+h1{
+    margin-bottom: 0.67em;
+}
+/*END TITLES*/
+
+.btn{
+    margin-left: 0.65em;
+    margin-right: 0.65em;
+    border-radius: 64px;
+    padding: 0.9em 1.6em;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.btn-primary{
+    &.dark{
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+    &.pink{
+        background-color: $pink;
+        color: $primary-color;
+        border-color: $pink;
+    }
 }
