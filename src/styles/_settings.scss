@@ -2,8 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
 $primary-color:#08224c;
+$blue:#2b9dfe;
 $pink:#ffa5c5;
 $light-blue:#e2f3ff;
+$white:#ffffff;
+$green:#198754;
 
 body {
     margin: 0;
@@ -22,7 +25,14 @@ h1{
     margin-bottom: 0.67em;
 }
 /*END TITLES*/
+/*BACKGROUND COLOR*/
+.bg-blue-light{
+    background-color: $light-blue;
+}
 
+.bold{
+ font-weight: 700;
+}
 .btn{
     margin-left: 0.65em;
     margin-right: 0.65em;
@@ -52,3 +62,33 @@ h1{
         }
     }
 }
+
+/*TOOLTIPS*/
+.tooltip-content,
+.tooltip-box{
+    background-color: $white;
+    border-radius:8px;
+    box-shadow: rgb(0 0 0 / 15%) 4px 4px 10px 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    user-select: none;
+    background-color: white;
+    color:$primary-color;
+    z-index: 9999;
+    padding:16px;
+    max-width: 200px;
+    min-width:150px;
+    width:fit-content;
+
+    svg{
+        box-shadow: rgb(0 0 0 / 15%) 4px 4px 10px 0px;
+        path{
+            stroke: white;
+        }
+    }
+} 

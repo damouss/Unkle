@@ -20,5 +20,90 @@
     margin-top: 111px;
     .header{
         background-color: $light-blue;
-    }    
+    } 
+    .dsibrf {
+        margin-right: 0;
+        margin-left: 0;
+        background-color: transparent;
+        box-shadow: rgb(130 11 86 / 16%) 1px 1px 20px 6px inset;
+        border-radius: 8px;
+        
+        &::-webkit-scrollbar {
+            width: 0.5em;
+            height: 0.5em;
+           }
+         
+           &::-webkit-scrollbar-thumb {
+            background-color:#5bb3fe;
+            border-radius:8px;
+        }
+        button{
+            &.btn-in-box{
+                position: relative;
+                left: 1000px;
+                top: 1000px;
+                width: 200px;
+            }
+            
+        }  
+        input{
+            &.input-in-box{
+                position: relative;
+                left: 1000px;
+                top: 1000px;
+                width: 200px;
+            }
+           
+        }  
+        @media screen and  (max-width:768px){
+            width: 100%;      
+
+            button{
+                &.btn-in-box{
+                position: relative;
+                left: 915px;
+                top: 990px;    
+                }            
+            }  
+            input{
+                &.input-in-box{
+                position: relative;
+                left: 915px;
+                top: 990px; 
+                }
+                               
+            }  
+        }
+    }
+    .input-password{
+        .dsibrf {
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    
+}
+
+
+
+.input-password{
+    input{
+        padding:16px;
+        max-width: 300px;        
+        border-radius: 8px;
+        border-color: $primary-color;
+        &:focus,
+        &:focus-visible{
+            border-color:$blue ;
+        }
+    }
+}
+.requirements{
+    background-color: $white;
+    list-style: none;
+    box-shadow: rgb(0 0 0 / 15%) 4px 4px 10px 0px;
+    padding:16px;
+    .requirement-valid{        
+        color: $green;
+    }
 }
