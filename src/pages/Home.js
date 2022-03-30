@@ -25,8 +25,8 @@ const Home = () => {
             </section>
             <section className='input-password py-5'>
                 <div className='container'>
-                    <h2 className='text-center'>Password with validity tooltip</h2>
-                    <p className='text-center'>Click and see</p>
+                    <h2 className='text-center'>Password settings with rules display</h2>
+                    <p className='text-center'>Visible on click</p>
                     <ScrollBox>
                         <PasswordTooltip></PasswordTooltip>
                     </ScrollBox>
